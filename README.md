@@ -1,3 +1,16 @@
+docker build -f Dockerfile.dev .
+docker run -it -p 3000:3000 CONTAINER_ID
+docker run -it  00b55c0752b8 npm run test
+docker attach bd691f656812
+docker exec -it bd691f656812 sh
+
+
+to create a react project
+npx create-react-app frontend
+npm run start
+npm run test
+npm run build
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
